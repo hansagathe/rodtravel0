@@ -1,0 +1,62 @@
+body{
+     margin: 0;
+      min-height: 100vh;
+     display: flex; justify-content: center;
+      align-items: center;
+       background: transparent;
+     }
+ html { 
+    min-height: 100%; 
+    background: url("images/blue-lagoon1.jpg") center / cover no-repeat; 
+} 
+ #calculator{ 
+    font-family: Arial, sans-serif;
+     background-color: hsl(181, 57%, 54%);
+      border-radius: 15px; max-width: 360px;
+       width: 100%;
+        border: 3px solid white; 
+          padding: 12px;             
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); 
+    }
+ 
+ #display{
+     height: 85px;
+     width: 100%;
+      padding: 20px;
+       font-size: 2.5rem;
+        text-align: left;
+         border: none;
+          background-color: hsl(180, 89%, 93%);
+           box-sizing: border-box;
+         } 
+ #keys{ 
+    display : grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+      padding: 25px;
+     } 
+ button{ 
+    width: 100%;
+     aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      border: none;
+       background-color: lavender;
+        color: black;
+         font-size: 2rem;
+          font-weight: bold;
+           cursor: pointer; 
+        }
+  button:hover{ 
+    background-color: hsl(240, 2%, 56%);
+ } 
+ button:active{ 
+    background-color: hsl(240, 2%, 66%);
+ } 
+  .operator-btn{
+     background-color: aquamarine;
+     } .operator-btn:hover{ 
+        background-color: hsl(160, 100%, 85%);
+     } 
+  .operator-btn:active{ 
+    background-color: hsl(160, 100%, 95%);
+ }
